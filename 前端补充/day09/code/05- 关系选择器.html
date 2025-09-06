@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <style>
+        /* li p{
+            color: blueviolet; 后代选择器，不管是儿子还是孙子都会选择的
+    
+        } */
+        /* li > p{
+            color: saddlebrown; 只选择子代，或者说儿子，不会选择后代
+        } */
+         /* .one + li{
+            color: navy;从one向下选择第一个li
+         } */
+        /* .one~li{
+            color: slateblue; 从one向下选择所有的li
+        } */
+    </style>
+</head>
+<body>
+    <ul>
+        <li>文字内容</li>
+        <li>文字内容</li>
+        <li>
+            <p>我是子代标签</p>
+            <div>
+                <p>我会后代标签</p>
+            </div>
+        </li>
+        <li>文字内容</li>
+        <li>文字内容</li>
+        <li class="one">我是one这个类</li>
+        <li>文字内容</li>
+        <li>文字内容</li>
+        <li>文字内容</li>
+    </ul>
+</body>
+</html>

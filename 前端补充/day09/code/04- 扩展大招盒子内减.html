@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 300px;
+            height: 300px;
+            background-color: lawngreen;
+            margin: 30px;
+        }
+        .box1{
+            /* 给了盒子内减就会把盒子变大了，这个我们早就会了 */
+            padding: 30px;
+        }
+        .box2{
+            padding: 30px;
+            /* 这个不是普通的外加，而是自动内减，这个盒子还是原来的大小，不管是加边框还是加内边距都不会变大 */
+            box-sizing: border-box;
+            border: 10px solid blue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box1">这个是往外算的</div>
+    <div class="box2">这个是往里面算的</div>
+</body>
+</html>

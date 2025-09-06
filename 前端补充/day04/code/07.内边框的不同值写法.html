@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            border: 1px solid red;
+            display: inline-block;
+            padding: 10px;
+        }
+        .box2{
+            border: 1px solid red;
+            display: inline-block;
+            padding: 10px 30px;
+        }
+        .box3{
+            border: 1px solid red;
+            display: inline-block;
+            padding: 10px 30px 60px;
+        }
+        .box4{
+            border: 1px solid red;
+            display: inline-block;
+            padding: 10px 30px 50px 80px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        1.单值写法：padding: 10px；就是代表了4个值，上下左右都是10px；
+        2.双值写法：padding: 10px 30px;第一个代表上下，第二个值代表左右
+        3.三值写法：padding:10px 30px 60px; 第一个值代表上，第二个值代表左右，第三个值代表下；
+        4.四值写法：padding: 10px 0px 50px 80px; 上右下左---顺时针
+
+
+        内边距和外边距同理
+        1.单值写法：margin: 10px；就是代表了4个值，上下左右都是10px；
+        2.双值写法：margin: 10px 30px;第一个代表上下，第二个值代表左右
+        3.三值写法：margin:10px 30px 60px; 第一个值代表上，第二个值代表左右，第三个值代表下；
+        4.四值写法：margin: 10px 0px 50px 80px; 上右下左---顺时针
+    -->
+    <div class="box1">单值写法</div>
+    <div class="box2">双值写法</div>
+    <div class="box3">三值写法</div>
+    <div class="box4">四值写法</div>
+</body>
+</html>

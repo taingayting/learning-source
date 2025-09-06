@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+            margin: 100px;
+        }
+        .box2{
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            margin-left: 100px;
+            margin-top: 200px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        第一种情况：如果是并列的两个盒子，那么他会以最大那个外边距来计算，正常，
+        所有的浏览器都是以最大的那个外边距来计算的。
+        -->
+    <div class="box1"></div>
+    <div class="box2"></div>
+    
+</body>
+</html>

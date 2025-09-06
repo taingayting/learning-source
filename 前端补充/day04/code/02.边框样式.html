@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one{
+            width: 300px;
+            height: 150px;
+            /* 复合写法 */
+            border: 1px solid pink;
+        }
+        /* 
+        border 线类型有 
+            solid 实线
+            dashed 虚线
+            dotted 点线
+
+        */
+        .two{
+            width: 300px;
+            height: 150px;
+            /* dashed 虚线 */
+            border: 1px dashed green;
+            /* 扩展 dotted 点线 */
+            /* border: 1px dotted red; */
+        }
+        /* border 的上下左右边框有
+            border-top
+            border-right
+            border-bottom
+            border-left   
+        
+        */
+        .three{
+            width: 300px;
+            height: 150px;  
+            border-top: 1px solid blue;
+            border-right: 5px solid red;
+            border-bottom: 10px solid green;
+            border-left: 15px solid yellow;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        语法格式：border:1px solid pink; --- 严格按照这个顺序来书写---规范
+        border: 线的大小 实线/虚线 线的颜色
+    -->
+    <div class="one"></div><br>
+    <div class="two"></div><br>
+    <div class="three"></div><br>
+</body>
+</html>

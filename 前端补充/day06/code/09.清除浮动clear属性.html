@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 900px;
+            height: 300px;
+            margin: 0 auto;
+            background-color: chartreuse;
+        }
+        .box1{
+            width: 50px;
+            height: 50px;          
+            background-color: darkgreen;
+            float: left;
+        }
+        .box2{
+            width: 50px;
+            height: 50px;  
+            background-color: indianred;
+            float: left;
+        }
+        .box3{
+            width: 50px;
+            height: 50px;  
+            background-color: teal;
+            float: right;
+        }
+        p{
+            height: 100px;
+            background-color: firebrick;
+            /* 早期写法 */
+            /* clear: left; 清除左浮动 */
+            /* clear: right; 清除右浮动 */
+            /* 优化代码写法--推荐使用 */
+            clear: both; /*清除两端，两者都--推荐大家使用的--加薪  */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box1">大毛</div>
+        <div class="box2">二毛</div>
+        <div class="box3">三毛</div>
+        <p>常青树！NBA官方晒詹姆斯生涯历年定妆照对比：23号的22季常青树！
+            NBA官方晒詹姆斯生涯历年定妆照对比：23号的22季常青树！NBA官方晒詹姆斯生涯历
+            年定妆照对比：23号的22季常青树！NBA官方晒詹姆斯生涯历年定妆照对比：23号的22季</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 600px;
+            height: 500px;
+            background-color: rebeccapurple;
+            margin: 0 auto;
+            /* 相对定位 */
+            position: relative;
+        }
+        .son1{
+            width: 50px;
+            height: 50px;
+            background-color: aqua;
+            /* 绝对定位 */
+            position: absolute;
+            left: 0px;
+            top: 225px;
+        }
+        .son2{
+            width: 50px;
+            height: 50px;
+            background-color: fuchsia;
+            /* 绝对定位 */
+            position: absolute;
+            right: 0px;
+            bottom: 225px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        工作经验： 我们在工作最常见的定位场景-----父相子绝（父盒子是相对定位，子盒子是绝对定位）
+    -->
+        <div class="box">
+            <div class="son1">大毛</div>
+            <div class="son2"> 二毛</div>
+        </div>
+</body>
+</html>

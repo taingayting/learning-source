@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* li:first-child{
+            background-color: chocolate; 选择一个li
+        } */
+
+        /* li:last-child{
+            background-color: chocolate;选择最后一个li
+        } */
+
+        /* li:only-child{
+            background-color: saddlebrown; 选择只有一个li元素，就是那个独生子女
+        } */
+
+        /* li:nth-child(2){
+            background-color: chartreuse;
+        } */
+
+        /* ul:empty{
+            background-color: red;
+            height: 20px;这个高度是给显示用的，因为里面没有内容看不到效果，高度来占位
+
+        } */
+
+        /* li:not(.one){
+            background-color: royalblue; 除了这个 one之外都选择，取反，选择除了这个one之外的都选择
+        } */
+
+        div:before{
+            /* 在内容之前:后面我们还会用到这个技术,后面扩展*/
+            content: '今天';
+        }
+        div:after{
+            /* 在内容之后:后面我们还会用到这个技术,后面扩展*/
+            content: '周五';
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>文字内容1</li>
+        <li>文字内容2</li>
+        <li class="one">我是one这个类</li>
+        <li>文字内容</li>
+        <li>文字内容</li>
+        <li>文字内容</li>
+        <li>文字内容</li>
+        <li>文字内容</li>
+    </ul>
+    <ul>
+        <li>独生子女</li>
+    </ul>
+    <ul></ul>
+    <div>是</div>
+</body>
+</html>

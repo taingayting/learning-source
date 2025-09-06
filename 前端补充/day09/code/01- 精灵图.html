@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 86px;
+            height: 34px;
+            margin: 100px;
+            /* background-color: palegoldenrod; */
+            /* -350 -110represent the horizontal (x) and vertical (y)  */
+            /* this code positions the image with specific offsets and prevents it from repeating across the background.   */
+            background: url("img/01.png") no-repeat -350px -110px;
+
+        }
+        .box2{
+            width: 36px;
+            height: 21px;
+            margin: 200px;
+            background: url(img/01.png) no-repeat -600px -160px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        为什么使用精灵图（目的）：
+    为了有效的减少服务器接受和发送请求的次数，提高页面的加载速度，出现了 css 精灵技术（也称 css sprites，css 雪碧0.
+
+    核心原理：
+
+    将网页中的一些小背景图像整合到一张大图中，这样服务器只需要一次请求就可以了。
+
+    重点： 如何使用精灵图，这个设计精灵图效果是UI妹子来设计好，我们要还会使用这个技术---加薪
+
+    ctrl + 加号放大图片
+    ctrl + 减号缩小图片
+
+    ctrl + alt + 0 100%显示
+    按住 空格 可以移动图片
+
+    总结：公式-------除了左上角是 0 0 坐标，其他的都是负值，打遍天下无敌手，都是可以通过测试来检测的
+
+     -->
+
+     <div class="box"></div>
+     <div class="box2"></div>
+     
+</body>
+</html>

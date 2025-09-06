@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: tan;
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            z-index: 3;
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: firebrick;
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            z-index: 1;
+        }
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            position: absolute;
+            left: 30px;
+            top: 30px;
+            z-index: 2;
+
+
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        总结： 如果我们都有定位，默认的是后写的盒子压着先写的盒子----后来者居上（长江后浪推前浪）
+
+        属性 z-index 它可以控制定位层级问题，控制谁在上面谁在下面
+
+        书写语法：直接在盒子上加 z-index: 2; 注意没有单位
+        z-index: 9999; 值越大越在上面，值越小越在下面，默认值是0
+        温故而知新： 我们总结一下目前没有单位大招：zoom1； z-index：2；      font-wieght:7000px 这个是可以省略单位
+
+    -->
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+</html>

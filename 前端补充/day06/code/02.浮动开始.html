@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* box 的 width 和 height 从小到大 */
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            float: left;
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: rebeccapurple;
+            float: left;
+        }
+        .box3{
+            width: 300px;
+            height: 300px;
+            background-color: palegreen;
+            float: right;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 
+        注意：项目里面很多时候都是有标准流也有浮动流和定位流
+        如果一个页面既有标准流又有浮动流，那么是浮动流压着标准流（大白话：就像水里的浮漂，会飘在水面的）----一句话： 就是浮动流会压着标准流
+
+        总结：如果都是浮动流就会按照顺序自动排列（大白话：就像我们去食堂吃饭一样，线来先得）
+
+    -->
+    <div class="box1"> </div>
+    <div class="box2"> </div>
+    <div class="box3"> </div>
+
+</body>
+</html>

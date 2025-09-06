@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 800px;
+            height: 600px;
+            border: 1px solid red;
+            margin: 0 auto;
+            /* 复合写法 */
+            /* background: url("img/01.jpg") no-repeat center center; */
+            /* background: url("img/01.jpg") no-repeat left bottom; */
+            /* background: url("img/01.jpg") no-repeat 100px 50px; */
+            /* 扩展分解写法 */
+            background-color: pink; 
+            background-image:url("img/01.jpg");
+            background-repeat: no-repeat;
+            background-position: 100px 50px;
+            /* 推荐大家使用复合写法 */
+            background: url("img/01.jpg") no-repeat 100px 50px; 
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        语法格式：
+        background:可以加背景色，还可以加背景图
+        url图片的路径
+        默认的是重复的，如果想不重复，后面加 no-repeat---不平铺\
+
+
+        水平位置和垂直位置
+        第一个值代表水平位置：左 left 中 center 右 right
+        第二个值代表垂直位置： 上 top 中 center 下 bottom
+    -->
+        <div class="box"></div>
+</body>
+</html>

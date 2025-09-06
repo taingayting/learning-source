@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 我们常见的表单： 搜索，邮件注册，登录，qq登录，微信登录-----都是表单 
+        form
+        input 文本域 大白话就是输入框
+        type 类型
+        text 文本类型
+        name 名称---规范
+        password 密码
+        submit---提交按钮
+        value--值
+        radio--单选按钮
+        checkbox----复选框
+        file--文件域
+        select---列表菜单，下拉菜单
+        textarea--文本区域
+        rows='10' 行数
+        cols='30' 列数
+
+
+        //扩展后台相关的----了解
+        action='' 链接后台页面的 目前给空
+        method='get'显示传递参数
+        method='post' 隐藏传递参数
+        option--列表值
+    
+    -->
+     <form >
+        账号：<input type="text" name="user"> <br>
+        密码：<input type="password" name="pws"> <br>
+        邮箱：<input type="text" name="email"> <br>
+        性别：<input type="radio" name="sex" >man
+              <input type="radio" name="sex">female <br>
+        爱好：<input type="checkbox" name="like"> 吃饭  
+            <input type="checkbox" name="like"> 打篮球   
+            <input type="checkbox" name="like"> 唱歌  
+            <input type="checkbox" name="like"> 玩游戏  <br>  
+        上传：<input type="file" name="file1">    <br>
+        城市：<select >
+                    <option value="北京">北京</option>
+                    <option value="南京">南京</option>
+                    <option value="上海">上海</option>
+                    <option value="广州">广州</option>
+                    <option value="杭州">杭州</option>
+              </select> <br>
+
+        备注： <textarea  rows="10" cols="30" >
+               </textarea> <br>
+               <input type="submit" name="res" value="重置"><br>
+        <input type="submit" name="sub" value="登录">
+        
+
+     </form>
+</body>
+</html> 

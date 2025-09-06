@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <style>
+
+        /* CSS初始化 reset  */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+       ul{
+        list-style: none;
+       }
+       body{
+        font-size: 12px;
+        color: black;
+        font-family: 'Courier New', Courier, monospace;
+
+       }
+       a{
+        color: red;
+        text-decoration: none;
+       }
+       a:hover{
+        color: olive;
+       }
+       /* CSS初始化 结束 */
+       /* 上大招--抽离公用样式 */
+       .fl{
+        float: left;
+       }
+       .fr{
+        float: right;
+       }
+       .header{
+        width: 990px;
+        height: 60px;
+        margin: 0 auto;
+        background-color: skyblue;
+       }
+       .nav{
+        width: 990px;
+        height: 50px;
+        margin: 0 auto;
+        background-color: peru;
+       }
+       .banner{
+        width: 990px;
+        height: 500px;
+        margin: 0 auto;
+        background-color: violet;
+       }
+       .content{
+        width: 990px;
+        height: 1000px;
+        margin: 0 auto;
+        background-color: gold;
+       }
+       .left{
+        /* float: left; */
+        width: 290px;
+        height: 1000px;
+        background-color: darkcyan;
+       }
+       .right{
+        /* float: right; */
+        width: 680px;
+        height: 1000px;
+        background-color: lightcoral;
+       }
+       .footer{
+        width: 990px;
+        height: 80px;
+        margin: 0 auto;
+        background-color: red;
+       }
+    </style>
+</head>
+</head>
+<body>
+    <!-- header 开始 -->
+    <div class="header"> header</div>
+   
+    <!-- header 结束 -->
+    <!-- nav 开始-->
+    <div class="nav"> nav </div>
+    <!-- nav 结束-->
+    <!-- banner 开始 -->
+     <div class="banner"></div>
+    <!-- banner 结束 -->
+    <!-- content 开始 -->
+     <div class="content">
+        <div class="left fl">left</div>
+        <div class="right fr">right</div>
+     </div>
+    <!-- content 结束 -->
+    <!-- footer 开始  -->
+    <div class="footer"> footer</div>
+    <!-- footer 结束  -->
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 600px;
+            height: auto;
+            background-color: palegoldenrod;
+            margin: 0 auto;
+          
+        }
+        .son1{
+            width: 200px;
+            height: 300px;
+            float: left;
+            background-color: saddlebrown;
+        }
+        .son2{
+            width: 390px;
+            height: 300px;
+            float: right;
+            background-color: chartreuse;
+        }
+       
+        .box2{
+            width: 600px;
+            height: 300px;
+            background-color: hotpink;
+            margin: 0 auto;
+        }
+      
+        /* 上难度可以加薪 */
+        .clearfix:after{   /* 这个是cs3 伪类写法，后面会单独有一节课来讲解这个伪类 */
+            content: ''; /* 内容为空 */
+            height: 0;/* 高度为0*/
+            display: block;/* 转换为块*/
+            visibility: hidden;/* 隐藏对象*/
+            clear: both;/* 清除两端 */
+            
+        }
+        /* 为了解决低版本浏览器兼容问题，比如 IE6 的兼容问题 */
+        .clearfix{
+            zoom: 1; /* 注意没有单位，这行代码是为了解决低版本浏览器兼容问题*/
+        }
+    </style>
+</head>
+<body>
+    <!-- 需求： 首先有两个盒子，上下排列，第一个盒子里面有两个小盒子，并且第一个大盒子高度为自动auto 或者不写，里面小盒子必须是浮动的
+    那么下面的大盒子一定会错位的，这个是一个经典的面试题 bug--面试被问到的几率很大 
+
+    扩展大招：这个代码有点难，但是可以加薪
+    
+
+    -->
+    <div class="box1 clearfix">
+        <div class="son1"> 大毛</div>
+        <div class="son2"> 二毛</div>
+       
+    </div>  
+    <div class="box2"></div>
+</body>
+</html>

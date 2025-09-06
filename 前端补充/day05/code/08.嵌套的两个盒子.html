@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box{
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+            /* border: 1px solid blue; 早期写法， 如果你看到了一个项目里面有白色边框不要惊讶---扩展 */
+            /* border: 1px solid blue; */
+            overflow: hidden;
+        }
+        .son{
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            /* 想让小盒子往下50px */
+            margin-top: 50px;
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        第二情况：嵌套的两个盒子就会真正的出现bug 错误 外边距塌陷
+        我们只是给小盒子加了外边距，他竟然把父盒子带跑了-------这个在工作里面不允许的
+
+        如果面试官问到你最好回答两种以前的写法和现在的写法----可以加新
+        1.早期写法， 给父盒子加一个白色的边框，不推荐，留给面试官来问
+        2.大招 给父盒子加 overflow: hidden; ---很强大，推荐使用
+
+    -->
+    <div class="box">
+        <div class="son"></div>
+    </div>
+</body>
+</html>

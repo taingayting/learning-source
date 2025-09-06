@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 170px;
+            height: 200px;
+            border: 1px solid #000;
+            /* 溢出隐藏 ， 最常用的，这个是代码界的大神，以后很多很多经典bug都是用这个溢出隐藏可以完美解决 */
+            overflow: hidden;
+        }
+        p{
+            width: 170px;
+            height: 180px;
+            border: 1px solid #000;
+            /* overflow:hidden; 溢出隐藏，大白话: 就是把多余的部分切除掉，这个很正常 */
+            /* overflow: auto;  把多余的部分以滚动条的形式展示 */
+            /* overflow: scroll; 用的少 */
+            /* overflow: visible; 默认值 */
+           
+        }
+    </style>
+</head>
+<body>
+    <div  class="box">
+        <img src="img/01.jpg" alt="">
+    </div>
+    <p>Former U.S. President Barack Obama and his wife Michelle Obama delivered 
+        a one-two punch at the Democratic National Convention on Tuesday night, 
+        urging Americans to back Kamala Harris in her 11th-hour presidential bid 
+        against Republican Donald Trump.</p>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        我们的表格都是给默认值的 0
+        border='0' cellpadding='0' cellspacing='0'
+        公式：老师的原创只要做细线表格间距给1
+        步骤：记住了项目里面直接用
+        1，给间距一个数值1，其他的边框和边距都是 0
+        2，给table表格一个背景色，那么这个表格的背景色就是我们线的颜色
+        3，给所有的单元格一个白色的背景色
+    -->
+    <!-- 不用这个<h3 align="center">课程表</h3>了用 caption  -->
+
+    <!-- 
+        caption 表格的标题
+        thead 表格的头部
+        tbody 表格主体
+        tfoot 表格的底部
+    -->
+    <table width="500" height="300" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="red">
+        <caption>课程表</caption>
+
+        <thead>
+            <tr align="center" bgcolor="skyblue">
+                <th>语文</th>
+                <th>书写</th>
+                <th>英语</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr align="center" bgcolor="skyblue">
+                <td>43</td>
+                <td>67</td>
+                <td>78</td>
+            </tr>
+            <tr align="center" bgcolor="skyblue">
+                <td>90</td>
+                <td>80</td>
+                <td>87</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr align="center" bgcolor="skyblue">
+                <td>93</td>
+                <td>85</td>
+                <td>81</td>
+            </tr>
+        </tfoot>    
+    </table>
+</body>
+</html>

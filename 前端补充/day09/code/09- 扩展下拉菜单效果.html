@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 300px;
+            height: 30px;
+            border: 1px solid rebeccapurple;
+            margin: 100px auto;
+            /* 父相子绝---相对定位 */
+            position: relative;
+        }
+        div:before{
+            content: "";
+            width: 10px;
+            height: 10px;
+            border-top: 1px solid seagreen;
+            border-right: 1px solid seagreen;
+            position: absolute;
+            right: 10px;
+            top: 10px;    
+            /*  后面会给大家扩展这2D 旋转，先体检一下感受它的魅力 */
+            transform: rotate(45deg);
+        }
+
+    </style>
+</head>
+<body>74
+    <!-- 要求: 一个盒子实现两个盒子的效果 -->
+     <div></div>
+</body>
+</html>

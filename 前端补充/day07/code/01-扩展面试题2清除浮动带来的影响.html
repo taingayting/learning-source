@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 600px;
+            height: auto;
+            background-color: palegoldenrod;
+            margin: 0 auto;
+          
+        }
+        .son1{
+            width: 200px;
+            height: 300px;
+            float: left;
+            background-color: saddlebrown;
+        }
+        .son2{
+            width: 390px;
+            height: 300px;
+            float: right;
+            background-color: chartreuse;
+        }
+        .clear{
+            clear: both;
+        }
+        .box2{
+            width: 600px;
+            height: 300px;
+            background-color: hotpink;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- 需求： 首先有两个盒子，上下排列，第一个盒子里面有两个小盒子，并且第一个大盒子高度为自动auto 或者不写，里面小盒子必须是浮动的
+    那么下面的大盒子一定会错位的，这个是一个经典的面试题 bug--面试被问到的几率很大 
+    
+    解决方案二： 额外标签法（专业名词--BFC）
+    举例：人类大约在地球还有1.2亿年以后就木有了， 任何的事物都是有始有终的，浮动又开始就应该有结束。
+
+    步骤：
+    1.先在最后的浮动下面加一个额外的标签
+    2.在上面写css样式 .clear{clear:both;}
+
+    总结：在一些网站上面你会发现有这个额外标签  <div class="clear"></div> 目标就是为了解决这个bug的
+
+    
+    -->
+    <div class="box1">
+        <div class="son1"> 大毛</div>
+        <div class="son2"> 二毛</div>
+        <div class="clear"></div>
+    </div>  
+    <div class="box2"></div>
+</body>
+</html>

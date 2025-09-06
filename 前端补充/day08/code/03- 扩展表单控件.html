@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset{
+            width: 500px;
+            height: 600px;
+        }
+        textarea{
+            width: 300px;
+            height: 200px;
+            /* 禁止拖动文本区域 */
+            resize: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        fieldset 和 legend 配合将多个表单控件根据需求来分组
+        fielset 分组 legend 定义组标题
+        placeholder="请输入账号" 默认文字 当你输入文字的时候会消失
+    -->
+        <form action="">
+            <fieldset>
+                <legend>用户注册信息</legend>
+                姓名: <input type="text" name="user" placeholder="请输入账号"> <br>
+                密码: <input type="password" name="user"  placeholder="请输入密码"> <br>
+                <textarea cols="30" rows="10"></textarea>
+            </fieldset>
+        </form>
+</body>
+</html>

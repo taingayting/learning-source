@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 570px;
+            height: 270px;
+            background-color: pink;
+            border: 5px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        我们的内边框和边框是会把盒子变大的，我们的盒子是不能让他变大的，解决方案一：内减法（外边距不需要内减，只有边距和内边距）
+
+        总结：只要给了盒子加了边框和内边距那么这个盒子一定会变大的，所以我们要减去你给的边框和内边距大小的值，如果盒子变大了，下面的内容就是别挤下去，记住了：给了边距和内边距别忘了减去响应的值
+    -->
+    <div class="box"></div>
+</body>
+</html>

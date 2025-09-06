@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav{
+            text-align: center;
+        }
+        a{
+            width: 120px;
+            height: 42px;
+            /* 在这里的no-repeat也可以不加因为上面的a （width 和 height )已经压了， 一般需要加 */
+            background: url("img/02.jpg") ;
+            display: inline-block;
+            line-height: 42px;
+            color: #3e3e3e;
+            text-decoration: none;
+            font-size: 18px;
+            /* font-weight: bold; */
+            /* 加粗还可以给数字，注意不要带单位 */
+            font-weight: 600;
+        }
+        a:hover{
+            /* 在这里的no-repeat也可以不加因为上面的a （width 和 height )已经压了， 一般需要加 */
+            background: url(img/03.jpg) ;
+            text-decoration: underline;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <!-- nav 代表导航  -->
+     <div class="nav">
+        <a href="#">首页</a>
+        <a href="#">文章</a>
+        <a href="#">播客</a>
+        <a href="#">论言</a>
+        <a href="#">练习</a>
+        <a href="#">参考</a>    
+     </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: url("img/1.png") no-repeat;
+        }
+        .box{
+            width: 300px;
+            height: 300px;
+            margin: 20px auto;
+            /* background-color: #000;
+            /* 取值范围是从 0 到 1 ，最小值是0， 最大值是1 记得没有单位 */
+            /* opacity: 0.1; */ 
+
+            /* 加薪- 用一行代码实现半透明效果 */
+            background: rgb(0,0,0,0.5); /* 取值范围 0-1 cs3提供的大招*/
+            /* border-radius: 150px; 盒子的宽度和高度一半 */
+            /* 推荐加薪写法，推荐使用百分比 */
+            border-radius: 50%;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
